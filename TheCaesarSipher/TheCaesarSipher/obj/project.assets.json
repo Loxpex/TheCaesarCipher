@@ -8,24 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\Danil\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\User\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Danil\\OneDrive\\Документы\\GitHub\\TheCaesarCipher\\TheCaesarSipher\\TheCaesarSipher\\TheCaesarSipher.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Documents\\GitHub\\TheCaesarCypher\\TheCaesarSipher\\TheCaesarSipher\\TheCaesarSipher.csproj",
       "projectName": "TheCaesarSipher",
-      "projectPath": "C:\\Users\\Danil\\OneDrive\\Документы\\GitHub\\TheCaesarCipher\\TheCaesarSipher\\TheCaesarSipher\\TheCaesarSipher.csproj",
-      "packagesPath": "C:\\Users\\Danil\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Danil\\OneDrive\\Документы\\GitHub\\TheCaesarCipher\\TheCaesarSipher\\TheCaesarSipher\\obj\\",
+      "projectPath": "C:\\Users\\User\\Documents\\GitHub\\TheCaesarCypher\\TheCaesarSipher\\TheCaesarSipher\\TheCaesarSipher.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\User\\Documents\\GitHub\\TheCaesarCypher\\TheCaesarSipher\\TheCaesarSipher\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Danil\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

@@ -8,6 +8,7 @@ namespace TheCaesarCipher
         static void Main()
         {
             int Shift;
+            int Shift0;
             Console.WriteLine("Введите строку");
             string text = Console.ReadLine();
         Back:
@@ -23,7 +24,7 @@ namespace TheCaesarCipher
                 Console.Clear();
                 goto Back;
             }
-
+            Shift0 = Shift; 
 
             char[] words = text.ToCharArray();
             foreach (char s in words)
@@ -34,14 +35,17 @@ namespace TheCaesarCipher
                 {
                     Console.Write(" ");
                 }
-                else if (indexOfChar + Shift < 26)
+                else if (Shift >= 0)
                 {
-                    indexOfChar += Shift;
+                    Shift0 = Shift % 26;
+                    indexOfChar += Shift0;
                     Console.Write(alphabet[indexOfChar]);
                 }
                 else
                 {
-                    indexOfChar = indexOfChar + Shift - 26;
+                    Shift0 = Shift * -1; 
+                    Shift0 = Shift0 % 26;
+                    indexOfChar = 26 - indexOfChar - Shift0;
                     Console.Write(alphabet[indexOfChar]);
 
                 }
