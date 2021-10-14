@@ -4,15 +4,16 @@ namespace TheCaesarCipher
 {
     class Program
     {
-        static string alphabet = "abcdefghijklmnopqrstuvwxyz";
+        static string alphabet = "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz";
+
         static void Main()
         {
-            int Shift;
+            int Shift;                                                 // сдвиг и его клон. 
             int Shift0;
             Console.WriteLine("Введите строку");
             string text = Console.ReadLine();
-        Back:
-            Console.WriteLine("Введите сдвиг строки");
+        Back:                                                          // Метка goto (И снова простите за goto)
+            Console.WriteLine("Введите сдвиг строки");                 // проверка на корректность сдвига
             try
             {
                 Shift = Convert.ToInt32(Console.ReadLine());
@@ -31,21 +32,21 @@ namespace TheCaesarCipher
             {
                 int indexOfChar = alphabet.IndexOf(s);
 
-                if (indexOfChar == -1)
+                if (indexOfChar == -1)                               // проверка на символы, котоыре не могут быть изменены шифром
                 {
-                    Console.Write(" ");
+                    Console.Write(s);
                 }
-                else if (Shift >= 0)
+                else if (Shift >= 0)                                 //если сдвиг положительный
                 {
                     Shift0 = Shift % 26;
                     indexOfChar += Shift0;
                     Console.Write(alphabet[indexOfChar]);
                 }
-                else
+                else                                                 //если отрицательный
                 {
                     Shift0 = Shift * -1; 
                     Shift0 = Shift0 % 26;
-                    indexOfChar = 26 - indexOfChar - Shift0;
+                    indexOfChar = 26 +indexOfChar - Shift0;
                     Console.Write(alphabet[indexOfChar]);
 
                 }
